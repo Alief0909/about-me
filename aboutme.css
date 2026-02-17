@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+  background-color: aliceblue;
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+}
+
+.navbar {
+  background-color: rgb(231, 228, 224);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  border: 2px solid black;
+  position: sticky;
+  top: 0;
+  border-left: none;
+  border-right: none;
+}
+
+.navbar a {
+  vertical-align: middle;
+  padding: 25px;
+  margin-top: 0;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+
+.logoNavbar {
+  width:35px;
+  height: 35px;
+  align-items: center;
+  vertical-align: middle;
+}
+
+.logoNavbar:hover {
+  background-color: rgb(237, 238, 160);
+  border-radius: 10px;
+  border: 1px solid black;
+  width: 40px;
+  height: 40px;
+  transition: .4s;
+}
+
+.banner {
+  margin-top: 0;
+  height: 150px;
+  background-color: rgb(227, 217, 217);
+}
+.banner h1, p {
+  margin-top: 0;
+  margin-left: 25px;
+}
+
+.profile-picture {
+  width: 10%;
+  height: 10%;
+  border: 3px solid rgb(0, 0, 0);
+  border-radius: 8px;
+}
+
+.container-profile-picture {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.biografi1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.biografi1 tr {
+  width: 100px;
+  height: 25px;
+}
+
+.biografi1 td {
+  font-size: 20px;
+}
+
+.header-contact,
+.header-donate {
+  text-align: center;
+}
+
+.contactme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.donate button,
+.contactme button {
+  width: 400px;
+  height: 40px;
+  font-size: 18px;
+  font-family: "Poppins";
+  font-weight: 100;
+  border-radius: 18px;
+}
+
+.donate button:hover,
+.contactme button:hover {
+  color: rgb(3, 207, 17);
+  background-color: rgb(224, 224, 224);
+}
+
+.logo {
+  width: 20px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  border-radius: 10px;
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    height:40px ;
+  }
+
+  .navbar a{
+    padding:20px;
+  }
+
+  .logoNavbar {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .banner {
+    height:115px;
+  }
+
+  .banner h1 {
+    font-size: 18px;
+  }
+  .banner p {
+    margin-right: 10px;
+    font-size: 11px;
+  }
+
+  .header-contact,
+  .header-donate {
+    font-size: 15px;
+  }
+
+  .profile-picture {
+    width: 40%;
+    height: 40%;
+  }
+  .biografi1 tr {
+    width: 50px;
+    height: 15px;
+  }
+
+  .biografi1 td {
+    font-size: 10px;
+  }
+
+  .donate button,
+  .contactme button {
+    width: 200px;
+    height: 30px;
+    font-size: 10px;
+    font-weight: 100;
+    border-radius: 18px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
